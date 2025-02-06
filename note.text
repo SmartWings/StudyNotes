@@ -1,0 +1,9 @@
+昨天再调试APP的时候，图片无法显示了，看了下控制台报错信息，发现控制台报 it violates the following Content Security Policy directive: "default-src 'self' http://example.com". Note that 'img-src' was not explicitly set, so 'default-src' is used as a fallback. 这类的错误，在网上找了一些资料，发现是因为没有设置img-src的缘故，在index.html中
+
+<meta http-equiv="Content-Security-Policy" content="default-src *;img-src 'self' data: base64; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/>
+
+添加，在default-src：*;后面添加
+img-src 'self' data: base64;
+之后，图片成功显示，问题解决。
+
+
