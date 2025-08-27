@@ -1,20 +1,18 @@
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/u012365780/article/details/144987115)
 
-#### 文章目录
+## 目录
 
-*   [本地模型部署工具 - Ollama](#Ollama_1)
-*   *   [一、基于 Ollama 部署本地开源大模型](#_Ollama__3)
-    *   *   [1. Ollama 本地安装](#1_Ollama__14)
-        *   [2. Ollama 终端交互](#2_Ollama_32)
-        *   [3. 使用 API 服务访问](#3_API_54)
-        *   [4. 常用命令](#4__87)
-        *   [5. 常见问题](#5__118)
-        *   *   [5.1 设置本地存储模型路径（MacOS）](#51_MacOS_122)
-            *   [5.2 设置 API 请求 HOST](#52__API__HOST_136)
-            *   [5.3 如何指定上下文窗口大小？](#53__145)
+- [一、基于 Ollama 部署本地开源大模型](#一基于-ollama-部署本地开源大模型)
+  - [1. Ollama 本地安装](#1-ollama-本地安装)
+  - [2. Ollama 终端交互](#2-ollama-终端交互)
+  - [3. 使用 API 服务访问](#3-使用-api-服务访问)
+  - [4. 常用命令](#4-常用命令)
+  - [5. 常见问题](#5-常见问题)
+    - [5.1 设置本地存储模型路径（MacOS）](#51-设置本地存储模型路径macos)
+    - [5.2 设置 API 请求 HOST](#52-设置-api-请求-host)
+    - [5.3 如何指定上下文窗口大小？](#53-如何指定上下文窗口大小)
 
-本地模型部署工具 - Ollama
------------------
+# 本地模型部署工具 - Ollama
 
 ### 一、基于 Ollama 部署本地开源大模型
 
@@ -75,20 +73,20 @@ ollama --version
 
 ```
 curl http://localhost:11434/v1/chat/completions \
-	-H "Content-Type: application/json" \
-	-d '{
-			"model": "qwen2:0.5b",
-			"messages": [
-				{
-					"role": "system",
-					"content": "You are a helpful assistant."
-				},
-				{
-					"role": "user",
-					"content": "你好呀!"
-				}
-			]
-	}'
+  -H "Content-Type: application/json" \
+  -d '{'
+    "model": "qwen2:0.5b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "你好呀!"
+      }
+    ]
+  }'
 ```
 
 ```
@@ -127,6 +125,120 @@ ollama stop llama3.2
 ollama serve
 ```
 
+##### 4.1 Ollama常用命令介绍
+
+Ollama常用命令包括3类，分别是模型管理类、服务管理类、信息查询类
+
+##### 4.1.1 模型管理类
+
+###### `ollama pull <model-name>`
+从在线仓库拉取模型。
+
+示例：
+```shell
+ollama pull deepseek-r1:1.5b
+```
+意思是拉取 `deepseek-r1:1.5b` 模型。
+
+###### `ollama create <custom-model-name> -f <Modelfile>`
+根据 Modelfile 创建模型。
+
+该命令通常用于离线安装模型。例如，当你在 Hugging Face 下载了一个 `deepseek-r1:8b` 的模型文件，可以通过以下命令进行离线安装：
+
+```shell
+echo "From ./deepseek-r1-8b.gguf" > modelfile-deepseek-r1-8b
+ollama create deepseek-r1:8b -f modelfile-deepseek-r1-8b
+```
+
+###### `ollama list`
+查看已下载的模型列表。
+
+示例：
+```shell
+ollama list
+```
+
+###### `ollama run <model-name>`
+运行指定模型。
+
+示例：
+```shell
+ollama run deepseek-r1:1.5b
+```
+意思是运行 `deepseek-r1:1.5b` 模型。
+
+
+######  `ollama cp <source-model-name> <new-model-name>` 
+复制模型。
+
+示例：
+```shell
+ollama cp deepseek-r1:1.5b my_model
+```
+意思是复制 `deepseek-r1:1.5b`，新模型名称为 `my_model`。
+
+
+###### `ollama rm <model-name>`
+删除模型。
+
+示例：
+```shell
+ollama rm deepseek-r1:1.5b
+```
+意思是删除 `deepseek-r1:1.5b` 模型。
+
+
+###### `ollama ps`
+查看正在运行的模型。
+
+示例：
+```shell
+ollama ps
+```
+
+
+###### `ollama stop <model-name>`
+停止正在运行的模型。
+
+示例：
+```shell
+ollama stop deepseek-r1:1.5b
+```
+意思是停止 `deepseek-r1:1.5b` 模型。
+
+##### 4.1.2 服务管理类
+
+### `ollama serve`
+启动 Ollama 服务。
+
+示例：
+```shell
+ollama serve
+```
+对于 Windows 来说通常会报错，提示端口占用，因为 Ollama 已经在运行。通常是开机自动运行。对于 Windows，想启动 Ollama 也无需使用命令行，像打开其他软件一样直接双击即可启动。
+
+
+##### 4.1.3 信息查询类
+
+###### `ollama -v`
+查询 Ollama 版本信息。
+
+示例：
+```shell
+ollama -v
+```
+
+
+###### `ollama show <model-name>`
+查看模型的详细信息。
+
+示例：
+```shell
+ollama show deepseek-r1:1.5b
+```
+表示查看 `deepseek-r1:1.5b` 模型的详细信息。
+
+
 #### 5. 常见问题
 
 参考：https://github.com/ollama/ollama/blob/main/docs/faq.md
@@ -161,23 +273,23 @@ launchctl getenv OLLAMA_HOST
 
 # api 接口 参数配置
 curl http://localhost:11434/v1/chat/completions \
-	-H "Content-Type: application/json" \
-	-d '{
-			"model": "qwen2:0.5b",
-			"messages": [
-				{
-					"role": "system",
-					"content": "You are a helpful assistant."
-				},
-				{
-					"role": "user",
-					"content": "你好呀!"
-				}
-			],
-      "options": {
-        "num_ctx": 4096
+  -H "Content-Type: application/json" \
+  -d '{'
+    "model": "qwen2:0.5b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "你好呀!"
       }
-	}'
+    ],
+    "options": {
+      "num_ctx": 4096
+    }
+  }'
 	
 # ollama run /set parameter num_ctx 4096
 # 参考：https://zhuanlan.zhihu.com/p/719200177 有详细原理讲述 
