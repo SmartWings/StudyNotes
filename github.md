@@ -18,10 +18,15 @@
 ### [Figma原型界面设计AI集成MCP服务]()
 > MCP服务器为Cursor、VS Code等AI编程代理提供Figma布局信息
 > [Figma协作官网](https://www.figma.com/)
+### [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
+> 一个基于VITS的简单易用的变声框架
 
 
 ## 工具协作
-
+### [sniffnet网络流量监控](https://github.com/GyulyVGC/sniffnet)
+> 一款开源的本地电脑网络流量监控软件，可以监控任何网络流向数据。
+### [短链接制作](https://github.com/ccbikai/Sink)
+> 一个开源的短链接服务
 ### [WhisperLiveKit本地的语音转文本](https://github.com/QuentinFuxa/WhisperLiveKit)
 > 一款本地化工作的实时语音转录直接呈现于浏览器，配备即用型后端+服务器及简洁前端。
 ### [蛐蛐 (QuQu)](https://github.com/yan5xu/ququ)
@@ -45,6 +50,14 @@
 > 一款基本包含所有前端React组件源码的开源网站--大神网站
 ### [vue-bits【react-bits同款作者】](https://github.com/DavidHDev/vue-bits)
 > 一款基本包含所有前端VUE组件源码的开源网站
+### [ChopperBot自动化切片机器人](https://github.com/Geniusay/ChopperBot)
+> 虎牙，斗鱼，抖音，BiliBili，TikTok，Twitch🔥热门🔥智能直播视频剪辑发布AI机器人，自动化🤖，全智能化⚙（智能生成切片，标题，封面，简介），可视化👓，平台热门监控🌡，丰富插件随意扩展🕹，快速部署⚡，视频账号打造自动发布🌟，支持DIY🎮
+### [Win11Debloat，win11系统净化](https://github.com/Raphire/Win11Debloat)
+> 专门用于关闭win11无用的服务
+### [so-novel小说下载，开源工具](https://github.com/freeok/so-novel)
+> 一款可以转换任意格式的小说下载｜网文下载 | 网络小说
+### [My Live Caption - 实时字幕与翻译工具](https://github.com/violet125qq/my-live-caption-with-translation-for-macos)
+> 这是一个基于 Python 的桌面应用，可以实时捕捉麦克风、系统音频或两者的混合，使用 OpenAI 的 Whisper 模型进行语音转文字，并利用 DeepL API 将文字翻译成中文。它以一个可拖动的、始终置顶的悬浮窗形式存在，方便您在进行会议、观看视频或玩游戏时获得实时字幕。
 
 ## 教育学习
 ### [从0开始LLMs模型开发与学习](https://github.com/rasbt/LLMs-from-scratch)
