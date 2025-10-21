@@ -20,7 +20,13 @@
 > [Figma协作官网](https://www.figma.com/)
 ### [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 > 一个基于VITS的简单易用的变声框架
+### [纳米聊天](https://github.com/karpathy/nanochat)
+> 一个超级省钱类似于chatgpt一样的聊天模型，低成本高能力，麻省理工开源
+### [SkyReels-V1开源短剧生成](https://github.com/SkyworkAI/SkyReels-V1)
+> SkyReels V1：首个且最先进的开源以人为中心的视频基础模型
 
+### [开源录屏工具](https://github.com/CapSoftware/Cap)
+> Cap 是一款开源的 Loom 替代品，提供美观、可共享的屏幕录制功能。作为一款视频消息工具，Cap 允许用户在几秒钟内录制、编辑和分享视频，是一款轻量级且强大的跨平台工具。
 
 ## 工具协作
 ### [sniffnet网络流量监控](https://github.com/GyulyVGC/sniffnet)
@@ -54,6 +60,10 @@
 > 虎牙，斗鱼，抖音，BiliBili，TikTok，Twitch🔥热门🔥智能直播视频剪辑发布AI机器人，自动化🤖，全智能化⚙（智能生成切片，标题，封面，简介），可视化👓，平台热门监控🌡，丰富插件随意扩展🕹，快速部署⚡，视频账号打造自动发布🌟，支持DIY🎮
 ### [Win11Debloat，win11系统净化](https://github.com/Raphire/Win11Debloat)
 > 专门用于关闭win11无用的服务
+### [Win11系统精简工具](https://github.com/ntdevlabs/tiny11builder)
+> 用于构建精简版 Windows 11 映像的脚本,生成精简版win11安装包
+### [Windows FileConverter](https://github.com/Tichau/FileConverter)
+> 文件转换器是一款非常简单的工具，可让您通过Windows资源管理器中的右键菜单来转换和压缩文件。
 ### [so-novel小说下载，开源工具](https://github.com/freeok/so-novel)
 > 一款可以转换任意格式的小说下载｜网文下载 | 网络小说
 ### [My Live Caption - 实时字幕与翻译工具](https://github.com/violet125qq/my-live-caption-with-translation-for-macos)
@@ -62,13 +72,25 @@
 ## 教育学习
 ### [从0开始LLMs模型开发与学习](https://github.com/rasbt/LLMs-from-scratch)
 > 在PyTorch中从零开始逐步实现一个类似ChatGPT的大型语言模型
+### [从零开始掌握编程](https://github.com/codecrafters-io/build-your-own-x)
+> 此仓库汇集了一系列编程相关的优质详尽的指南，逐步讲解如何从零开始重新构建我们喜爱的各类技术。
 ### [基于 AI 完整保留排版的 PDF 文档全文双语翻译](https://github.com/Byaidu/PDFMathTranslate)
 > 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero
 ### [awesome-public-datasets 全分类开源数据集](https://github.com/awesomedata/awesome-public-datasets)
 > 一份分类齐全的高质量开放数据集清单。
 ### [everyone-can-use-english人人都能用英语](https://github.com/ZuodaoTech/everyone-can-use-english)
 > 人人都能【用】英语，主打实用性日常使用。
+### [一人企业方法论](https://github.com/easychen/one-person-businesses-methodology-v2.0)
+> 从长文到一本近6万字的小书，从有感而发的分享到两年迭代而得的完整方法论
+> 不再局限在独立开发，发展为更为通用的方法论，非技术读者也可创作数字商品或基于NoCode/开源项目+AI辅助构建在线服务
 ### [国内中小学教材资源](https://github.com/TapXWorld/ChinaTextbook)
 > 所有小初高、大学PDF教材。
 ### [中国独立开发者项目列表](https://github.com/1c7/chinese-independent-developer)以及[PLUS汇总版](https://github.com/XiaomingX/1000-chinese-independent-developer-plus)
 > 中国开发者项目的统计汇总
+### [一个go语言编写的开源后台程序](https://github.com/pocketbase/pocketbase)
+> 一款高质量的go语言开源后端
+
+
+## 游戏
+### [Microverse In Box Demo](https://github.com/KsanaDock/Microverse)
+> 一个模拟上帝类的沙盒游戏，基于Godot 4开发的多智能体AI社交模拟系统。在这个虚拟世界中，AI角色拥有独立的思维和记忆，能够自主进行社交互动、完成任务，并在持续的交流中发展出复杂的社会关系。
