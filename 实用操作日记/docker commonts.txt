@@ -1,0 +1,87 @@
+docker run -dit --net assign --ip 172.18.0.6 --add-host gateway-o.mhh-dev.svc:172.18.0.5 --name nginx-web -p 8080:80 --restart=always --privileged=true -v /root/ftp_web/nginx/html:/usr/share/nginx/html:rw -v /root/ftp_web/nginx/log:/var/log/nginx -v /root/ftp_web/nginx/config/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+## --体检本地运行环境
+docker run --name tijian-web -p 10000:80 --restart=always --privileged=true -v /Users/xiao/workspaces/WebstormProjects/tijianweb:/etc/nginx/html:rw  -v /Users/xiao/workspaces/WebstormProjects/tijianweb/nginx.conf:/etc/nginx/conf.d/default.conf:ro -d nginx:latest
+## --redis 8本地运行环境
+docker run --name redis8 -p 6379:6379 --volume=/data --network=bridge --workdir=/data  --restart=always --runtime=runc -d redis:latest
+## --webui本地运行环境
+docker run --name open-webui -p 3000:8080 --volume=open-webui:/app/backend/data --network=bridge --workdir=/app/backend --restart=always --add-host host.docker.internal:host-gateway --runtime=runc -d ghcr.io/open-webui/open-webui:main
+## --屎山代码分析
+docker run --rm -v "/Users/xiao/IdeaProjects/mhh-openapi-huazhuo-center/src/main:/build" fuck-u-code analyze
+## --mqtt eclipse-mosquitto本地运行环境
+docker run --name mosquitto \
+  -p 1883:1883  \
+  -p 9001:9001 \
+  --restart=always --privileged=true \
+  -v /Users/xiao/SDE/MQTT/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro \
+  -v /Users/xiao/SDE/MQTT/mosquitto/data:/mosquitto/data:rw \
+  -v /Users/xiao/SDE/MQTT/mosquitto/log:/mosquitto/log:rw \
+  -d eclipse-mosquitto:latest
+## 设置密码文件
+# 在容器内创建密码文件
+touch /mosquitto/config/passwd
+chmod 0700 /mosquitto/config/passwd
+mosquitto_passwd -b /mosquitto/config/passwd username password
+## 测试连接
+# 发布消息
+mosquitto_pub -h localhost -t "test/topic" -m "Hello MQTT"
+
+# 订阅消息
+mosquitto_sub -h localhost -t "test/topic"
+
+
+
+docker run --name mosquitto -p 1883:1883 -p 9001:9001 --restart=always -d eclipse-mosquitto:latest
+
+--导出镜像文件
+docker save -o /Users/xiao/Downloads/redis8.tar redis:latest
+
+
+--查询容器pid
+docker inspect -f '{{.State.Pid}}' <container_name>
+docker exec <container_id_or_name> ps -ef | grep java
+docker inspect <container_id_or_name> --format '{{.State.Pid}}'
+docker top <container_id_or_name>
+--容器内执行
+# 在容器内查找 Java 进程
+ps aux | grep java
+jps -l  # 如果容器内有 JDK
+--使用jattach
+chmod 777 jattach
+./jattach <pid> dumpheap /tmp/heapdump.hprof
+./jattach [pid] threaddump /tmp/thread_dump.txt
+
+top -H -b -n 1 -p $JAVA_PID > top_output.txt
+
+# 查看 JVM 信息
+docker exec <container> /tmp/jattach <pid> info
+
+# 查看系统属性
+docker exec <container> /tmp/jattach <pid> properties
+
+# 查看线程转储
+docker exec <container> /tmp/jattach <pid> threaddump
+
+# 查看内存使用情况
+docker exec <container> /tmp/jattach <pid> inspectheap
+
+# 执行 GC
+docker exec <container> /tmp/jattach <pid> gc
+
+
+# 创建多级目录
+docker exec <container_name> mkdir -p /app/logs/archive
+
+# 复制单个文件
+docker cp config.properties <container_name>:/app/config/
+
+# 复制整个目录
+docker cp ./data/ <container_name>:/app/
+
+# 复制并重命名文件
+docker cp script.sh <container_name>:/app/scripts/startup.sh
+
+# 复制多个文件
+docker cp file1.txt file2.txt <container_name>:/app/data/
+
+# 把本地运行的容器当作镜像导出
+docker commit --author "shenfeng1208@163.com" --message "mosquitto Snapshot latest version"  mosquitto   mqttser:latest
