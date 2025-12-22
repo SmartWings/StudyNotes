@@ -213,7 +213,7 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 基于go语言轻量级、功能齐全、高校的webdav协议的服务器程序
 ### [Fizzy看板](https://github.com/basecamp/fizzy)
 > 开源的看板协作工具
-### [Stremio 流媒体服务器](https://github.com/Stremio/stremio-web)
+### [Stremio 在线影音查询](https://github.com/Stremio/stremio-web)
 > Stremio - 畅享流媒体自由
 > Stremio是一款现代媒体中心，为您提供一站式视频娱乐解决方案。通过轻松安装的插件，您可以探索、观看并管理各类视频内容。
 ### [jellyfin媒体服务器](https://github.com/jellyfin/jellyfin)
@@ -223,6 +223,15 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 ### [Infisical](https://github.com/Infisical/infisical)
 > Infisical是一款开源的密钥、证书及特权访问管理平台。
 
+
+### [logseq知识管理](https://github.com/logseq/logseq)
+> Logseq 是一个知识管理与协作平台。它注重隐私、耐用性和用户控制。Logseq 提供一系列强大的知识管理、协作、PDF 注释和任务管理工具，支持多种文件格式，包括 Markdown 和 Org-mode，以及多种笔记组织和结构化功能。
+### [Trilium Notes 笔记管理](https://github.com/TriliumNext/Trilium)
+>Trilium Notes 是一款免费且开源、跨平台的阶层式笔记应用程序，专注于建立大型个人知识库。
+### [Joplin笔记](https://github.com/laurent22/joplin)
+>关于Joplin——一款注重隐私的笔记应用，支持Windows、macOS、Linux、Android及iOS平台的同步功能。
+### [Memos个人笔记](https://github.com/usememos/memos)
+> Memos是一款以隐私为先、支持自托管的个人知识库，无论是个人笔记、团队维基还是知识管理，都能无缝适配。它基于Go与React构建，在确保功能丰富与易用性的同时，提供闪电般的运行速度。
 
 ## 暂时存放未明确分组的内容
 ### [ChromeAppHeroes 好用的浏览器插件集合](https://github.com/zhaoolee/ChromeAppHeroes?tab=readme-ov-file)
