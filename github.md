@@ -230,8 +230,9 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 >Trilium Notes 是一款免费且开源、跨平台的阶层式笔记应用程序，专注于建立大型个人知识库。
 ### [Joplin笔记](https://github.com/laurent22/joplin)
 >关于Joplin——一款注重隐私的笔记应用，支持Windows、macOS、Linux、Android及iOS平台的同步功能。
-### [Memos个人笔记](https://github.com/usememos/memos)
+### [Memos随想笔记](https://github.com/usememos/memos)
 > Memos是一款以隐私为先、支持自托管的个人知识库，无论是个人笔记、团队维基还是知识管理，都能无缝适配。它基于Go与React构建，在确保功能丰富与易用性的同时，提供闪电般的运行速度。
+> 类似于flomo
 
 ## 暂时存放未明确分组的内容
 ### [ChromeAppHeroes 好用的浏览器插件集合](https://github.com/zhaoolee/ChromeAppHeroes?tab=readme-ov-file)

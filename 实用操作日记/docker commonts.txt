@@ -30,8 +30,8 @@ mosquitto_sub -h localhost -t "test/topic"
 
 
 
-docker run --name mosquitto -p 1883:1883 -p 9001:9001 --restart=always -d eclipse-mosquitto:latest
-
+docker run --name mosquitto -p 1883:1883 -p 9001:9001 --restart=always --network=bridge -d eclipse-mosquitto:latest
+-v C:/application/MQTT/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro -v C:/application/MQTT/mosquitto/data:/mosquitto/data:rw -v C:/application/MQTT/mosquitto/log:/mosquitto/log:rw -d eclipse-mosquitto:latest
 --导出镜像文件
 docker save -o /Users/xiao/Downloads/redis8.tar redis:latest
 
