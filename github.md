@@ -204,7 +204,7 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 主唱 / 鼓 / 贝斯 / 钢琴 / 其他分离（5个音干）)
 >[官网](https://research.deezer.com/)
 ### [蛐蛐 (QuQu)](https://github.com/yan5xu/ququ)
-> 开源免费的 Wispr Flow 替代方案 | 集成FunASR本地模型和可配置大语言模型的下一代中文桌面语音工作流
+> 开源免费的 Wispr Flow 替代方案 集成FunASR本地模型和可配置大语言模型的下一代中文桌面语音工作流
 ### [hugo世界上最快的建站工具](https://github.com/gohugoio/hugo)
 > 号称世界上最快的建站工具
 ### [jsoncrack.com](https://github.com/AykutSarac/jsoncrack.com)
