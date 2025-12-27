@@ -18,6 +18,8 @@
 > 全AI模型的系统提示词编写工具
 ### [WrenAI-让AI为你编写专业的sql语句](https://github.com/Canner/WrenAI)
 > GenBI（生成式商业智能）支持以自然语言查询任意数据库，能在数秒内生成精准的SQL语句（文本转SQL）、图表（文本转图表）及人工智能驱动的洞察分析。
+### [](https://github.com/crewAIInc/crewAI)
+> 用于编排角色扮演、自主AI智能体的框架。通过促进协作智能，CrewAI赋能智能体无缝协作，共同应对复杂任务。
 ### [My Live Caption - 实时字幕与翻译工具](https://github.com/violet125qq/my-live-caption-with-translation-for-macos)
 > 这是一个基于 Python 的桌面应用，可以实时捕捉麦克风、系统音频或两者的混合，使用 OpenAI 的 Whisper 模型进行语音转文字，并利用 DeepL API 将文字翻译成中文。它以一个可拖动的、始终置顶的悬浮窗形式存在，方便您在进行会议、观看视频或玩游戏时获得实时字幕。
 ### [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
@@ -43,13 +45,22 @@
 ### [VibeVoice](https://github.com/microsoft/VibeVoice)
 > 微软开源的AI语音
 > VibeVoice是一款创新框架，专为从文本生成富有表现力的长篇多说话人对话音频（如播客）而设计。该框架有效解决了传统文本转语音系统在可扩展性、说话人一致性及自然话轮转换等方面的重大挑战。
-### [Everywhere一款桌面级AI工具软件，能够在桌面任何地方使用AI](https://github.com/DearVa/Everywhere?tab=readme-ov-file)
->[官网详情介绍](https://everywhere.sylinko.com/zh-CN/)
+### [eep Java Library (DJL) ](https://github.com/deepjavalibrary/djl)
+> 一种基于Java的引擎无关型深度学习框架
+> Deep Java Library (DJL) 是一个开源的、引擎无关的Java高级深度学习框架。DJL旨在让Java开发者能够轻松入门并便捷使用。它提供原生的Java开发体验，其功能如同任何常规的Java库。
+您无需成为机器学习/深度学习专家即可开始使用。您可以凭借现有的Java专业知识作为切入点，逐步学习并运用机器学习与深度学习技术。通过您喜爱的集成开发环境，即可完成模型的构建、训练与部署。DJL让这些模型能够轻松集成到您的Java应用程序中。
+由于DJL与深度学习引擎无关，您在创建项目时无需在各类引擎间做出抉择，并可随时切换使用不同的引擎。为确保最佳性能，DJL还能根据硬件配置自动选择CPU或GPU进行运算。
+### [AIAS](https://gitee.com/mymagicpower/AIAS)
+> 提供产品级IOCR自定义模板识别，以图搜图，人像搜索等，免费，可商用，Java AI 人工智能一站式解决方案，为工作减负，为产品研发加速。项目类别包括：以及Java版 Pytorch 训练引擎，AI SDK，web应用等。
+> [官网](http://aias.top/)
+
 
 
 ## AI开源模型和工具
 ### [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)
 > 无需解释，强大的图片文字识别能力
+### [DeepSeek-Math-V2](https://github.com/deepseek-ai/DeepSeek-Math-V2)
+> 无需解释，强大的数学模型能力
 ### [OpenNotebook一款开源的基于LM模型的笔记本工具](https://github.com/lfnovo/open-notebook)
 > 一款开源的基于模型的笔记软件[官网](https://www.open-notebook.ai/)
 ### [SkyReels视频生成开源模型](https://github.com/SkyworkAI/SkyReels-V1)
@@ -94,7 +105,12 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > Cua（发音“koo-ah”）是一个开源的计算机使用智能体框架，它通过视觉理解与动作执行，使人工智能系统能够自主操作计算机。该框架适用于桌面端、浏览器及移动端自动化智能体的研究、评估与生产部署。
 > 什么是计算机使用代理？
 > 计算机使用代理（CUAs）是一种能够通过视觉理解和动作执行自主与计算机界面交互的人工智能系统。与传统自动化工具依赖易失效的选择器或API不同，计算机使用代理运用视觉语言模型来感知屏幕内容，并对界面交互进行逻辑推理——这使得它们能够适应界面变化，并处理跨应用程序的复杂多步骤工作流程。
-
+### [chrome-devtools-mcp 谷歌浏览器mcp工具](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+> chrome-devtools-mcp 允许您的编码助手（如 Gemini、Claude、Cursor 或 Copilot）控制并检查实时运行的 Chrome 浏览器。它作为模型-上下文-协议（MCP）服务器运行，使您的 AI 编码助手能够访问 Chrome 开发者工具的全部功能，从而实现可靠的自动化操作、深度调试和性能分析。
+### [Everywhere一款桌面级AI工具软件，能够在桌面任何地方使用AI](https://github.com/DearVa/Everywhere?tab=readme-ov-file)
+>[官网详情介绍](https://everywhere.sylinko.com/zh-CN/)
+### [Neo4j 图数据库](https://github.com/neo4j/neo4j)
+> Neo4j是全球领先的图数据库。作为一种高性能图存储系统，它具备成熟稳健数据库应有的全部特性，例如友好的查询语言与ACID事务支持。开发者可通过节点与关系构成的灵活网络结构进行编程，摆脱静态表格的束缚，同时享受企业级数据库的所有优势。相较于关系型数据库，Neo4j在众多应用场景中能实现数量级的性能提升。
 
 ## 编程相关
 ### [ossnav开源精选](https://github.com/maxiaobang7/ossnav)
@@ -105,6 +121,8 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 一款基本包含所有前端React组件源码的开源网站--大神网站
 ### [vue-bits【react-bits同款作者】](https://github.com/DavidHDev/vue-bits)
 > 一款基本包含所有前端VUE组件源码的开源网站
+### [galaxy-开源UI](https://github.com/uiverse-io/galaxy)
+> 最大的开源UI库！社区打造，免费使用。支持CSS或Tailwind两种样式方案。
 ### [supabase](https://github.com/supabase/supabase)
 >Postgres开发平台。Supabase为您提供专属的Postgres数据库，助您构建Web、移动端及AI应用程序。
 >[官网](https://supabase.com/)
@@ -131,8 +149,14 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 >学习宝库：你可以浏览列表，找到感兴趣的应用（如天气、笔记、游戏等），然后直接查看其完整的源代码，学习其他开发者的架构设计、UI实现和具体功能编码。
 >灵感来源：当你需要开发某个特定类型的应用时，可以来这里寻找类似的参考项目，了解不同的实现思路和第三方库的使用。
 >项目发现：它帮助开发者发现一些高质量的、可能还未被广泛知晓的开源应用项目。
+### [50个Python小案例](https://github.com/qxresearch/qxresearch-event-1)
+> Python实践教程：50+应用实例（每例仅10行代码）作者：@xiaowuc2
+> [在线学习](www.youtube.com/qxresearch)
 ### [开源电商平台evershop](https://github.com/evershopcommerce/evershop)
 > 一款开源的电商平台，可供学习和参考
+### [SmartJavaAI](https://github.com/geekwenjie/SmartJavaAI)
+> Java免费离线AI算法工具箱，支持人脸识别，活体检测，表情识别、目标检测、实例分割、行人检测、OCR文字识别、车牌识别、表格识别、ASR+TTS、机器翻译等功能，Maven引用即可使用。支持PyTorch、Tensorflow，已集成 Mtcnn、InsightFace、SeetaFace6、YOLOv8~v12、PaddleOCR(PPOCRv5)、Whisper等主流模型
+
 
 
 ## 工具协作
@@ -150,9 +174,17 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > Blind&Invisible Watermark ，图片盲水印，提取水印无须原图！
 >如何使用？[操作文档](https://blindwatermark.github.io/blind_watermark/#/en/README)
 
+### [PDFPatcher](https://github.com/wmjordan/PDFPatcher)
+> PDF补丁丁——PDF工具箱，可以编辑书签、剪裁旋转页面、解除限制、提取或合并文档，探查文档结构，提取图片、转成图片等等
+> [官网](pdfpatcher.cnblogs.com/)
 
 ### [开源录屏工具](https://github.com/CapSoftware/Cap)
 > Cap 是一款开源的 Loom 替代品，提供美观、可共享的屏幕录制功能。作为一款视频消息工具，Cap 允许用户在几秒钟内录制、编辑和分享视频，是一款轻量级且强大的跨平台工具。
+### [ShareX截图录制](https://github.com/ShareX/ShareX)
+> ShareX是一款免费开源的应用程序，用户只需按下一个键即可捕获或录制屏幕的任意区域。它还支持将图像、文本及各类文件类型上传至多种目标平台。
+### [lossless-cut](https://github.com/mifi/lossless-cut)
+> 无损视频/音频编辑的瑞士军刀
+> LosslessCut致力于成为终极跨平台FFmpeg图形界面工具，可对视频、音频、字幕及其他相关媒体文件进行极致快速且无损的操作。其核心功能是实现视频与音频文件的无损修剪与裁切，特别适用于通过粗剪方式压缩来自摄像机、GoPro、无人机等设备的大型视频文件，从而节省存储空间。它能快速提取视频精华片段，无需耗时重编码即可舍弃数GB冗余数据，全程保持画质无损。此外还支持多种应用场景。所有操作都极致迅捷——凭借强大的FFmpeg引擎处理底层运算，实现近乎直接的数据复制。
 ### [sniffnet网络流量监控](https://github.com/GyulyVGC/sniffnet)
 > 一款开源的本地电脑网络流量监控软件，可以监控任何网络流向数据。
 ### [短链接制作](https://github.com/ccbikai/Sink)
@@ -270,7 +302,8 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 一款适用于windows系统 类似于macos中的空格预览文件内容的功能软件
 ### [WSABulid-windows安卓模拟器](https://github.com/MustardChef/WSABuilds)
 > 在您的Windows 10和Windows 11电脑上运行Windows Subsystem For Android，该系统采用预构建二进制文件，并内置了Google Play商店（MindTheGapps）及/或Magisk或KernelSU（root解决方案）。
-
+### [reinstall在线重装系统](https://github.com/bin456789/reinstall)
+> 一键DD/重装脚本 (One-click reinstall OS on VPS)
 ### [MacOS系统极简的日历工具](https://github.com/LunarBar-app/LunarBar)
 > 完全免费且开源的 Mac 状态栏极简日历，支持农历、公共假日、系统日历及提醒等功能。
 ### [Linux数据源切换](https://github.com/SuperManito/LinuxMirrors)
@@ -282,11 +315,20 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 雷池通过过滤和监控 Web 应用与互联网之间的 HTTP 流量来保护 Web 服务。可以保护 Web 服务免受 SQL 注入、XSS、 代码注入、命令注入、CRLF 注入、ldap 注入、xpath 注入、RCE、XXE、SSRF、路径遍历、后门、暴力破解、CC、爬虫 等攻击。
 
 ## 教育学习
+### [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects)
+> "500个AI智能体项目"是一个精心整理的跨行业AI智能体应用案例合集。该项目展示了人工智能在医疗健康、金融服务、教育培训、零售消费等多个领域的实际应用场景，并提供相关开源项目的实现链接，生动呈现了AI智能体如何推动各行业实现智能化转型。
 ### [Embodied-AI-Guide](https://github.com/TianxingChen/Embodied-AI-Guide)
 > 具身智能技术指南 Embodied-AI-Guide,主要应用于机器人人工智能的学习。
 > Embodied AI（具身智能）入门的路径以及高质量信息的总结, 期望是按照路线走完后, 新手可以快速建立关于这个领域的认知, 希望能帮助到各位入门具身智能的朋友
 ### [从0开始构建AI agents](https://github.com/microsoft/ai-agents-for-beginners)
 > 一门教授构建 AI 代理所需知识的课程
+### [hello-agents从零开始构建智能体](https://github.com/datawhalechina/hello-agents)
+>📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程
+> [在线阅读](https://datawhalechina.github.io/hello-agents/)
+### [Vibe Coding 指南](https://github.com/2025Emma/vibe-coding-cn)
+> Vibe Coding 是一个与 AI 结对编程的终极工作流程，旨在帮助开发者丝滑地将想法变为现实。本指南详细介绍了从项目构思、技术选型、实施规划到具体开发、调试和扩展的全过程，强调以规划驱动和模块化为核心，避免让 AI 失控导致项目混乱。
+>核心理念: 规划就是一切。 谨慎让 AI 自主规划，否则你的代码库会变成一团无法管理的乱麻。
+
 ### [从0开始LLMs模型开发与学习](https://github.com/rasbt/LLMs-from-scratch)
 > 在PyTorch中从零开始逐步实现一个类似ChatGPT的大型语言模型
 ### [机器语言学习教程](https://github.com/josephmisiti/awesome-machine-learning)
@@ -296,9 +338,17 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 此仓库汇集了一系列编程相关的优质详尽的指南，逐步讲解如何从零开始重新构建我们喜爱的各类技术。
 ### [fucking-algorithm算法学习](https://github.com/labuladong/fucking-algorithm)
 > labuladong 的算法笔记
+### [算法学习TheAlgorithms-Python](https://github.com/subbarayudu-j/TheAlgorithms-Python)
+> TheAlgorithms-Python 是一个使用 Python 编程语言实现各种算法和数据结构的开源代码集合。其核心目标是成为一个教育性的资源库，帮助开发者、学生和任何对计算机科学感兴趣的人通过清晰的代码来理解和学习算法。
+> 这是一个大规模、系统化整理的计算算法与数据结构实现库。它并非一个可以直接安装的软件库，而是一个代码参考和学习的宝库。项目按照计算机科学的主要领域进行分类，涵盖了从基础到高级的众多经典算法。
+
 > [官网](https://labuladong.online/algo/)
-### [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects)
-> "500个AI智能体项目"是一个精心整理的跨行业AI智能体应用案例合集。该项目展示了人工智能在医疗健康、金融服务、教育培训、零售消费等多个领域的实际应用场景，并提供相关开源项目的实现链接，生动呈现了AI智能体如何推动各行业实现智能化转型。
+### [Fogsight雾象🐘](https://github.com/fogsightai/fogsight)
+> Fogsight是一款由大型语言模型驱动的人工智能代理与动画引擎。
+> 雾象是一款由大型语言模型（LLM）驱动的动画引擎 agent 。用户输入抽象概念或词语，雾象会将其转化为高水平的生动动画。
+> 将雾象部署在本地后，您只需输入词语，点击生成，便可得到动画。
+> 您也可以直接访问网站 fogsight.ai 直接使用，免部署在线生成动画
+
 ### [基于 AI 完整保留排版的 PDF 文档全文双语翻译](https://github.com/Byaidu/PDFMathTranslate)
 > 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero
 ### [awesome-public-datasets 全分类开源数据集](https://github.com/awesomedata/awesome-public-datasets)
@@ -306,6 +356,7 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 
 ### [一人企业方法论](https://github.com/easychen/one-person-businesses-methodology-v2.0)
 > 从长文到一本近6万字的小书，从有感而发的分享到两年迭代而得的完整方法论
+
 > 不再局限在独立开发，发展为更为通用的方法论，非技术读者也可创作数字商品或基于NoCode/开源项目+AI辅助构建在线服务
 ### [国内中小学教材资源](https://github.com/TapXWorld/ChinaTextbook)
 > 所有小初高、大学PDF教材。
@@ -321,9 +372,9 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 该项目是一个个人或组织维护的代码合集，主要收录了在各种编程课程、在线评测平台以及个人学习中完成的作业、实验和算法题解。它像一个公开的编程学习笔记，代码覆盖了从基础语法到高级算法的多个层面。
 > 识别作业文本内容，进行解答
 > [官网](https://skid.996every.day)
-### [算法学习TheAlgorithms-Python](https://github.com/subbarayudu-j/TheAlgorithms-Python)
-> TheAlgorithms-Python 是一个使用 Python 编程语言实现各种算法和数据结构的开源代码集合。其核心目标是成为一个教育性的资源库，帮助开发者、学生和任何对计算机科学感兴趣的人通过清晰的代码来理解和学习算法。
-> 这是一个大规模、系统化整理的计算算法与数据结构实现库。它并非一个可以直接安装的软件库，而是一个代码参考和学习的宝库。项目按照计算机科学的主要领域进行分类，涵盖了从基础到高级的众多经典算法。
+
+### [aella-data-explorer论文知识星球](https://github.com/context-labs/aella-data-explorer)
+> LAION研究论文数据集可视化探索器
 
 ## 英语学习
 ### [NCE-Flow](https://github.com/luzhenhua/NCE-Flow)
