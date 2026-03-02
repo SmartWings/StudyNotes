@@ -85,3 +85,7 @@ docker cp file1.txt file2.txt <container_name>:/app/data/
 
 # 把本地运行的容器当作镜像导出
 docker commit --author "shenfeng1208@163.com" --message "mosquitto Snapshot latest version"  mosquitto   mqttser:latest
+
+
+
+docker run --hostname=445cf24ee973 --env=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin --env=NGINX_VERSION=1.29.2 --env=NJS_VERSION=0.9.3 --env=NJS_RELEASE=1~trixie --env=PKG_RELEASE=1~trixie --env=DYNPKG_RELEASE=1~trixie --volume=/Users/xiao/workspaces/WebstormProjects/tijianweb:/etc/nginx/html:rw --volume=/Users/xiao/workspaces/WebstormProjects/tijianweb/nginx.conf:/etc/nginx/conf.d/default.conf:ro --network=bridge --privileged -p 10000:80 --restart=always --label='maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>' --runtime=runc -d nginx:latest

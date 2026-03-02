@@ -45,6 +45,25 @@
 ### [VibeVoice](https://github.com/microsoft/VibeVoice)
 > 微软开源的AI语音
 > VibeVoice是一款创新框架，专为从文本生成富有表现力的长篇多说话人对话音频（如播客）而设计。该框架有效解决了传统文本转语音系统在可扩展性、说话人一致性及自然话轮转换等方面的重大挑战。
+### [Chatterbox情感语音生成模型](https://github.com/resemble-ai/chatterbox)
+>Chatterbox是由Resemble AI推出的三款先进开源文本转语音模型系列。
+我们很高兴推出Chatterbox-Turbo——这是我们迄今为止最高效的模型。基于精简的3.5亿参数架构，Turbo以更少的计算资源和显存消耗实现了高品质语音合成。我们还优化了原本是性能瓶颈的语音标记到梅尔频谱解码器，将生成步骤从10步缩减至单步完成，同时保持高保真音频输出。
+Turbo模型现已原生支持副语言标签功能，您可以使用[咳嗽]、[笑声]、[轻笑]等标签为语音注入生动的真实感。虽然Turbo主要针对低延迟语音代理场景开发，但它在叙事表达与创意工作流中同样表现卓越。
+> 该仓库目前包含几个核心变体：
+>* **Chatterbox (Base/Original)**：
+>* 基于 **Llama** 架构（0.5B 参数）。
+>* 使用超过 10 万小时（一说 50 万小时）的数据训练。
+>* 擅长高质量、高稳定性的语音生成。
+
+>* **Chatterbox-Turbo** (2025年底发布)：
+>* 主打**极速**和**低延迟**，专为实时对话 AI（Voice Agents）设计。
+>* 参数量更小（350M），推理速度极快（GPU 上可达实时的 6 倍速，延迟低至 75ms）。
+>* 原生支持副语言标签（笑声、停顿等）。
+
+>* **Chatterbox-Multilingual**：
+>* 支持 **23+ 种语言**，包括英语、中文、日语、西班牙语等。
+>* 支持跨语言克隆（例如用英语的参考音频生成中文语音）。
+
 ### [eep Java Library (DJL) ](https://github.com/deepjavalibrary/djl)
 > 一种基于Java的引擎无关型深度学习框架
 > Deep Java Library (DJL) 是一个开源的、引擎无关的Java高级深度学习框架。DJL旨在让Java开发者能够轻松入门并便捷使用。它提供原生的Java开发体验，其功能如同任何常规的Java库。
@@ -80,6 +99,22 @@
 已被超过6万个开源项目采用。
 请将AGENTS.md视为智能体的README文件：一个专属且可预测的位置，用于提供背景信息和操作指南，帮助AI编码智能体在您的项目中高效工作。
 > [官网](https://agents.md/)
+### [AI-skills](https://github.com/anthropics/skills)
+> 技能是包含指令、脚本和资源的文件夹，Claude会动态加载这些文件夹以提升特定任务的执行效率。技能教会Claude如何以可重复的方式完成具体任务，无论是依据贵公司的品牌指南创建文档，使用贵组织的特定工作流程分析数据，还是自动化处理个人事务。
+### [vibe-kanban](https://github.com/BloopAI/vibe-kanban)
+> 一句话总结：**它是一个专门为“AI 编程智能体（AI Coding Agents）”设计的任务管理与调度平台。**
+>如果说普通的 Kanban（如 Trello、Jira）是给人用的，那么 **Vibe Kanban 就是给 AI 用的**。它将传统的看板方法论应用到了 AI 辅助编程中，让你可以像管理人类实习生一样，管理多个 AI Agent 并行写代码。
+>以下是关于该项目的详细介绍、核心功能及应用场景：
+>在当前的“Vibe Coding”（氛围编程/随性编程）潮流中，开发者通常使用 Claude Code、Cursor 或 Devin 等工具。但这些工具存在一个明显瓶颈：**串行工作**。你只能盯着一个对话框，等待 AI 写完代码，然后再进行下一步，效率依然受限。
+> **Vibe Kanban 解决了以下问题：**
+>* **并行开发**：你可以同时派发 5 个任务给 5 个不同的 AI Agent。
+>* **环境隔离**：它利用 Git Worktree 技术，让每个 Agent 在独立的分支/工作区中工作，互不干扰，不会把你的主分支搞乱。
+>* **管理而非对话**：从“与 AI 聊天”转变为“验收 AI 的工作”。你只需负责提出需求（创建卡片）和代码审查（Review），中间的执行过程全自动。
+### [Agent-to-User Interface](https://github.com/google/A2UI)
+> A2UI是一个开源项目，它包含一套专为可更新的智能体生成用户界面而优化的格式规范，以及一套初始渲染器集合，使得智能体能够生成或填充丰富的用户界面。
+> 如果说 `Open Lovable` 是帮开发者**写代码**的，那么 `google/A2UI` 就是帮 AI **直接画界面**的。
+>一句话总结：**A2UI 是一种协议和标准，它允许 AI 智能体（Agent）在不写任何代码的情况下，直接通过发送 JSON 数据，在用户的屏幕上生成安全、原生、交互式的用户界面。**
+
 ### [omnibox基于AI的浏览器收藏导入等](https://github.com/import-ai/omnibox)
 > 小黑（OmniBox）是一个简单、跨平台 All in One 的 AI 知识中枢，收集、整理、应用、分享，一应俱全。
 >核心特性
@@ -107,6 +142,20 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 计算机使用代理（CUAs）是一种能够通过视觉理解和动作执行自主与计算机界面交互的人工智能系统。与传统自动化工具依赖易失效的选择器或API不同，计算机使用代理运用视觉语言模型来感知屏幕内容，并对界面交互进行逻辑推理——这使得它们能够适应界面变化，并处理跨应用程序的复杂多步骤工作流程。
 ### [chrome-devtools-mcp 谷歌浏览器mcp工具](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 > chrome-devtools-mcp 允许您的编码助手（如 Gemini、Claude、Cursor 或 Copilot）控制并检查实时运行的 Chrome 浏览器。它作为模型-上下文-协议（MCP）服务器运行，使您的 AI 编码助手能够访问 Chrome 开发者工具的全部功能，从而实现可靠的自动化操作、深度调试和性能分析。
+### [使用AI将网站克隆为React现代网页](https://github.com/firecrawl/open-lovable)
+> 简单来说，这是一个 AI 驱动的网站克隆与代码生成工具。它的核心能力是能够将任何给定的网站 URL，在几秒钟内“克隆”并重建成一个现代化的 React 应用程序。
+> 一键网站克隆：用户只需输入一个网站链接（URL），工具就会自动抓取该页面的视觉和结构信息。
+> 生成现代代码：它不仅仅是复制 HTML，而是利用 AI 生成高质量、可维护的现代前端代码（通常是 React + Tailwind CSS）。这意味着生成的代码是组件化的，可以直接用于后续开发。
+>开源与本地化：作为一个开源项目，它允许开发者在本地运行，拥有生成的全部代码所有权，是商业闭源工具（如 Lovable.dev 或 v0.dev）的一个免费、自托管的替代方案。
+
+### [UI-TARS字节开源](https://github.com/bytedance/UI-TARS-desktop/)
+> 是字节跳动（ByteDance）开源的一个基于视觉语言模型（VLM）的桌面端 GUI 智能体（Agent）应用。
+> 简单来说，这是一个让 AI “接管”你的鼠标和键盘，通过像人一样“看”屏幕、“操作”软件，来帮你完成各种计算机任务的工具。
+> 如：定机票、定酒店、生成天气图标等等。
+
+### [Cline](https://github.com/cline/cline)
+> vs code AI编码交互插件，类似于Claude Code
+
 ### [Everywhere一款桌面级AI工具软件，能够在桌面任何地方使用AI](https://github.com/DearVa/Everywhere?tab=readme-ov-file)
 >[官网详情介绍](https://everywhere.sylinko.com/zh-CN/)
 ### [Neo4j 图数据库](https://github.com/neo4j/neo4j)
@@ -156,6 +205,23 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 一款开源的电商平台，可供学习和参考
 ### [SmartJavaAI](https://github.com/geekwenjie/SmartJavaAI)
 > Java免费离线AI算法工具箱，支持人脸识别，活体检测，表情识别、目标检测、实例分割、行人检测、OCR文字识别、车牌识别、表格识别、ASR+TTS、机器翻译等功能，Maven引用即可使用。支持PyTorch、Tensorflow，已集成 Mtcnn、InsightFace、SeetaFace6、YOLOv8~v12、PaddleOCR(PPOCRv5)、Whisper等主流模型
+
+### [fabric](https://github.com/hyperledger/fabric)
+> Hyperledger Fabric是Hyperledger旗下的顶级项目，专为分布式账本解决方案而设计。其模块化架构提供了高度的机密性、弹性、灵活性和可扩展性。Hyperledger Fabric支持多种组件的可插拔实现，能够适应不同经济生态系统的复杂性。
+该平台拥有独特的弹性与可扩展架构，使其在众多区块链解决方案中脱颖而出。基于经过全面验证的开源框架，Hyperledger Fabric成为企业级区块链项目的理想起点。
+> **Hyperledger Fabric** 是目前**最适合构建 B2B（企业对企业）分布式应用**的平台。
+如果你想做一个“去中心化、抗审查、全球通用”的应用（如发行 NFT），请选 **Ethereum** 或 **Solana**。
+但如果你想做一个“几家公司之间共享数据、优化流程、且有严格隐私要求”的系统，**Hyperledger Fabric** 是首选，甚至是唯一的成熟选择。
+
+| 维度 | 优势 (Pros) | 劣势 (Cons) |
+| --- | --- | --- |
+| **性能** | 高吞吐量，支持并行执行，秒级确认。 | 相比中心化数据库（SQL）仍然慢很多。 |
+| **隐私** | 通道和私有数据集合 (PDC) 提供了极强的商业隐私保护。 | 隐私架构设计非常复杂，容易配置错误。 |
+| **成本** | 无需购买虚拟货币，只需承担服务器运维成本。 | **运维极其复杂**。搭建一套高可用的 Fabric 网络需要极高的运维技术（Docker, K8s, 证书管理）。 |
+| **开发** | 支持通用编程语言 (Go/Java)，人才好找。 | 学习曲线极陡峭，概念极其繁多。 |
+
+
+
 
 
 
@@ -254,6 +320,11 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 使用jellyfin-web并集成MPV播放器的桌面客户端。支持Windows、Mac OS和Linux系统。与Jellyfin Desktop不同，媒体播放完全在jellyfin-web界面窗口内进行。支持音频直通功能。
 ### [Infisical](https://github.com/Infisical/infisical)
 > Infisical是一款开源的密钥、证书及特权访问管理平台。
+### [web-check](https://github.com/Lissy93/web-check)
+> 深入了解特定网站的内部运作机制：发现潜在攻击途径、分析服务器架构、查看安全配置，并掌握网站采用的技术栈。
+当前仪表盘将显示：IP信息、SSL证书链、DNS记录、Cookie、请求头、域名信息、搜索爬取规则、页面地图、服务器位置、重定向日志、开放端口、路由追踪、DNS安全扩展、网站性能、追踪器、关联主机名、碳足迹。敬请期待，更多功能即将上线！
+我们的目标是助您轻松理解、优化并保障网站安全。
+> Lissy93/web-check 是目前颜值最高、聚合度最好的轻量级 OSINT 工具之一。它不是一个重型的漏洞扫描器（如 Nessus 或 Burp Suite），而是一个信息聚合仪表盘。它把原本需要熟练使用命令行（dig, curl, nmap）才能获取的数据，以图形化的方式呈现了出来，极大地降低了网站分析的门槛。
 
 
 ### [logseq知识管理](https://github.com/logseq/logseq)
@@ -277,6 +348,8 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 🍀 A cross-platform instant messaging desktop application with exceptional performance built on Rust + Vue3, compatible with Windows, macOS, Linux, Android, and iOS（一款基于Rust+Vue3极致性能的跨平台即时通讯桌面应用，兼容Windows、MacOS、Linux、Android、IOS）
 ### [NinJiaTag 自定义定位器](https://github.com/zhzhzhy/NinjiaTag-backend)
 > DIY 你自己的 airtag
+### [rendervc](https://github.com/rendercv/rendercv)
+> 使用yaml格式的文件生成你的简历内容
 
 ## windows、mac、linux等系统相关
 ### [crossdesk远程桌面](https://github.com/kunkundi/crossdesk)
@@ -285,6 +358,12 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 ### [crossdesk-client远程桌面客户端](https://github.com/kunkundi/crossdesk-web-client)
 > 基于 Web 实现的 Crossdesk 客户端
 
+### [mac 语音转文本 Handy](https://github.com/cjpais/Handy/releases)
+> Handy是一款免费的开源语音转文本应用程序，用户可以在自己电脑上运行该软件，并通过简单的键盘快捷键将语音转录为文本。
+### [mac 拾色器 Pika](https://github.com/superhighfives/pika/releases)
+> Pika 是一个开源的 macOS 拾色器应用程序，它可以帮助用户轻松地从任何屏幕上选择颜色，并将其转换为 RGB、HEX、CSS 等常见的颜色格式。
+### [mole mac系统清理](https://github.com/tw93/Mole)
+> 强大的系统清理命令行工具软件
 ### [mac系统开源软件分类大集合](https://github.com/jaywcjlove/awesome-mac)
 > [官网自带汉化](https://wangchujiang.com/awesome-mac/)
 ### [RyTunex-windows系统管理和优化管家](https://github.com/rayenghanmi/RyTuneX)
@@ -329,6 +408,8 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > Vibe Coding 是一个与 AI 结对编程的终极工作流程，旨在帮助开发者丝滑地将想法变为现实。本指南详细介绍了从项目构思、技术选型、实施规划到具体开发、调试和扩展的全过程，强调以规划驱动和模块化为核心，避免让 AI 失控导致项目混乱。
 >核心理念: 规划就是一切。 谨慎让 AI 自主规划，否则你的代码库会变成一团无法管理的乱麻。
 
+### [动手学大模型](https://github.com/Lordog/dive-into-llms)
+> 《动手学大模型》系列编程实践教程，由上海交通大学《自然语言处理前沿技术》（NIS8021）、《人工智能安全技术》课程（NIS3353）讲义拓展而来（教师：张倬胜），旨在提供大模型相关的入门编程参考。本教程属公益性质、完全免费。通过简单实践，帮助同学们快速入门大模型，更好地开展课程设计或学术研究。
 ### [从0开始LLMs模型开发与学习](https://github.com/rasbt/LLMs-from-scratch)
 > 在PyTorch中从零开始逐步实现一个类似ChatGPT的大型语言模型
 ### [机器语言学习教程](https://github.com/josephmisiti/awesome-machine-learning)
@@ -384,6 +465,9 @@ Markdown 编辑、渲染（公式、脑图、流程图、时序图、甘特图�
 > 人人都能【用】英语，主打实用性日常使用。
 ### [MuJing英语学习](https://github.com/tangshimin/MuJing)
 > 一款通过电影、美剧或文档中的真实语境学习英语单词的应用，让您在原汁原味的情境中记忆词汇，提升学习效率
+### [TypeWords](https://github.com/zyronon/TypeWords)
+> 练习英语，一次敲击，一点进步；
+> [官网](https://typewords.cc/)
 
 
 ## 游戏
